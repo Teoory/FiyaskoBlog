@@ -8,9 +8,32 @@ sections:
   label: Content
 - type: jekyll-posts
   label: Post
-  create: all
+  create: documents
   templates:
-  - blog-post
+  - post-standard
+  - post-header
+- type: jekyll-pages
+  label: Pages
+  create: documents
+  match: "**/*"
+- type: heading
+  label: Collections
+- type: directory
+  path: _recipes
+  label: Recipes
+  create: documents
+  match: "*.md"
+- type: directory
+  path: _pets
+  label: Pets
+  create: documents
+  match: "*.md"
+- type: heading
+  label: Jekyll
+- type: document
+  path: _config.yml
+  label: Config
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
