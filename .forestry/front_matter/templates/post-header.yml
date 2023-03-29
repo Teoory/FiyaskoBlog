@@ -1,4 +1,41 @@
 ---
 label: 'Post: Header'
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: last_modified_at
+  type: datetime
+  label: last_modified_at
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: teaser
+    type: file
+    config:
+      maxSize: 64
+    label: teaser
+  - name: og_image
+    type: file
+    config:
+      maxSize: 64
+    label: og_image
+  label: header
+- name: categories
+  type: tag_list
+  default: []
+  label: categories
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
