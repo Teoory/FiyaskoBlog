@@ -9,7 +9,6 @@ sections:
 - type: jekyll-posts
   label: Post
   create: all
-  match: "**/*"
   templates:
   - blog-post
 upload_dir: uploads
