@@ -52,3 +52,5 @@ fields:
 - name: toc
   type: boolean
   label: toc
+pages:
+- _recipes/peanut-butter-cookies.md
