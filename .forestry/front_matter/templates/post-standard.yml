@@ -20,3 +20,5 @@ fields:
   type: tag_list
   default: []
   label: tags
+pages:
+- your repo's top level directory/_posts/fiyasko-blog-a-hos-geldiniz.md
