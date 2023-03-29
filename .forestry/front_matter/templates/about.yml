@@ -1,4 +1,54 @@
 ---
 label: About
 hide_body: false
-fields: []
+fields:
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: excerpt
+  type: text
+  config:
+    required: false
+  label: excerpt
+- name: layouts_gallery
+  type: field_group_list
+  fields:
+  - name: url
+    type: file
+    config:
+      maxSize: 64
+    label: url
+  - name: image_path
+    type: file
+    config:
+      maxSize: 64
+    label: image_path
+  - name: alt
+    type: text
+    config:
+      required: false
+    label: alt
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: layouts_gallery
+- name: last_modified_at
+  type: datetime
+  label: last_modified_at
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: toc
+  type: boolean
+  label: toc
