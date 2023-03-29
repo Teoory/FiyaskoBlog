@@ -1,4 +1,22 @@
 ---
 label: 'Post: Standard'
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: excerpt_separator
+  type: text
+  config:
+    required: false
+  label: excerpt_separator
+- name: categories
+  type: tag_list
+  default: []
+  label: categories
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
